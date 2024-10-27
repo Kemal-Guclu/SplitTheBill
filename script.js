@@ -2,6 +2,7 @@ const numOfFriends = document.querySelector("#num-of-friends");
 const totalSum = document.querySelector("#total-sum");
 const tip = document.querySelector("#tip");
 const calc = document.querySelector(".calculate");
+calc.addEventListener("click", calculate);
 
 const sumPerson = document.querySelector(".sum-per-person");
 const restCharity = document.querySelector(".rest-for-charity");
