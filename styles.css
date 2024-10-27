@@ -21,10 +21,8 @@ body {
   overflow: hidden;
   padding: 0 2rem;
   line-height: 2rem;
-  background-color: blanchedalmond;
 }
-.the-bill-each-person {
-  align-items: center;
+.bill-per-person {
   width: 40%;
   margin: 0 auto;
   padding: 1rem;
@@ -33,13 +31,53 @@ body {
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.each-person {
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 5rem auto 2rem auto;
+  padding: 1rem 2rem;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   align-items: center;
-  width: 40%;
-  margin: 0 auto;
+  margin: 1rem 0;
+}
+.labels {
+  margin: 0 1rem 0.5rem 2rem;
+}
+.inputs {
   padding: 1rem;
-  background-color: #f9f9f9;
-  border-radius: 10px;
+  font-size: 1rem;
+  margin: 0.5rem 2rem 0.5rem 0.5rem;
+}
+label {
+  vertical-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+input {
+  width: 100%;
+  padding: 0.2rem;
+  font-size: 1rem;
+  margin: 0.2rem 0;
   border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+button {
+  width: 50%;
+  align-items: center;
+  padding: 0.7rem;
+  font-size: 1rem;
+  margin: 1rem 6rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+.person p {
+  font-size: 1rem;
+  margin: 1rem 1rem 0 4rem;
 }

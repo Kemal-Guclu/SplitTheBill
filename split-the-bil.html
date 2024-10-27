@@ -8,19 +8,36 @@
   </head>
   <body>
     <div class="container">
-      <div class="the-bill-each-person">
+      <div class="bill-per-person bill">
         <h2>Splitta Notan</h2>
-        <p>Antal vänner <input type="number" name="friends" id="friends" /></p>
-        <p>Totalsumma <input type="number" name="sum" id="sum" /></p>
-        <p>Dricks <input type="number" name="tip" id="tip" /></p>
-        <button class="calculate">BERÄKNA</button>
+        <div class="form-grid">
+          <div class="labels">
+            <label for="num-of-friends">Antal vänner </label><br />
+            <label for="total-sum">Totalsumma </label><br />
+            <label for="tip">Dricks </label>
+          </div>
+          <div class="inputs">
+            <input type="number" name="friends" id="num-of-friends" />
+            <input type="number" name="sum" id="total-sum" />
+            <input type="number" name="tip" id="tip" />
+          </div>
+        </div>
+        <button
+          class="calculate"
+          onclick="
+        calculate();
+        "
+        >
+          BERÄKNA
+        </button>
       </div>
-      <div class="the-bill-each-person">
+      <div class="bill-per-person person">
         <h2>Splitta Notan</h2>
+
         <p>Varje person ska betala:</p>
-        <p>240 kr</p>
+        <p class="sum-per-person"></p>
         <p>Resterande sänks till välgörenhet.</p>
-        <p>5 kr</p>
+        <p class="rest-for-charity"></p>
       </div>
     </div>
 
